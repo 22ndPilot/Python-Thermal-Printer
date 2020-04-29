@@ -16,7 +16,7 @@ import random
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 from pathlib import Path
-fileContent = Path('./story1.txt').read_text()
+fileContent = Path('story1.txt').read_text()
 printer.print(fileContent)
 
 printer.feed(3)
