@@ -16,9 +16,6 @@ import random
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 
-filepath = 'storytest1.txt'
-with open(filepath) as fp:
-  line= fp.readline()
-  printer.print(line)
+printer.print(imgay)
 
 printer.feed(3)
