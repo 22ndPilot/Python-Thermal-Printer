@@ -14,11 +14,19 @@ import random
 
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
-    x = open("story1.txt")
-    for line in x.readlines():
-        printer.print(line)
-        x.close()
+  def getFileContent("22ndPilot/Python-Thermal-Printer/blob/master/story1.txt"):
+    with open("22ndPilot/Python-Thermal-Printer/blob/master/story1.txt", 'r') as theFile:
+        # Return a list of lines (strings)
+        # data = theFile.read().split('\n')
+        
+        # Return as string without line breaks
+        # data = theFile.read().replace('\n', '')
+        
+        # Return as string
+        data = theFile.read()
+        return data
 
+print getFileContent('./test.txt')
 
 
 printer.feed(3)
