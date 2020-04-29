@@ -10,17 +10,16 @@ import lxml as lh
 import os
 import random
 
-url = "https://raw.githubusercontent.com/22ndPilot/Python-Thermal-Printer/master/test/story15"
-page = urllib.urlopen(url)
-doc = str(page.read())
-end = doc 
-result = doc[:end]
+
 
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 for x in result:
-    printer.print(x)
-    printer.println(' ')
+    x = open("story1.txt")
+    for line in x.readlines():
+        printer.print(line)
+        x.close()
+
 
 
 printer.feed(3)
