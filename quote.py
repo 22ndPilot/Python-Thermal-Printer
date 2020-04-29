@@ -15,7 +15,7 @@ import random
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 for x in result:
- x = printer.print(random.choice(list(open('story[n+1]'))))
+ x = printer.print(random.choice(list(open('story[int]'))))
     printer.println(' ')
 	
 
