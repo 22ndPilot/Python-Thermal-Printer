@@ -10,18 +10,11 @@ import lxml as lh
 import os
 import random
 
-url = "https://github.com/22ndPilot/Python-Thermal-Printer/blob/master/test/story15"
+url = "https://raw.githubusercontent.com/22ndPilot/Python-Thermal-Printer/master/test/story15"
 page = urllib.urlopen(url)
 doc = str(page.read())
-index = doc.find("<p class=\"# start">")
-doc = doc[index:-1]
-index = doc.find("<p>")
-doc = doc[index+3:-1]
-end = doc.find("<p class=\"# end">")
-result = doc[:end].replace("</p>", "").replace("\\t",
-    "").replace("\\n","").replace("\\r", "").replace("<p>",
-        "\n").replace("&nbsp;"," ").replace("&ldquo;","\"").replace("&rdquo;",
-            "\"").split("<br />")
+
+result = doc[:end]
 
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
