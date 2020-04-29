@@ -18,7 +18,7 @@ import uuid
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
-listOfFiles = []
+listOfFiles = ['story' + i + '.txt']
 
 for i in range (1, 50):
   listOfFiles.append('story' + i + '.txt')
