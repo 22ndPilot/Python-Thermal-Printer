@@ -13,7 +13,7 @@ import random
 url = "https://raw.githubusercontent.com/22ndPilot/Python-Thermal-Printer/master/test/story15"
 page = urllib.urlopen(url)
 doc = str(page.read())
-
+end = doc 
 result = doc[:end]
 
 
