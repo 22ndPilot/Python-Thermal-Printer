@@ -18,7 +18,7 @@ import uuid
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
-f = open(story1.txt, 'r')
+f = open(story101.txt, 'r')
 file_contents = f.read()
 printer.print (file_contents)
 f.close()
