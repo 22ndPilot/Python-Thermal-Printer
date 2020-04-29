@@ -16,6 +16,6 @@ import random
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 
-printer.print(imgay)
+printer.print('imgay')
 
 printer.feed(3)
