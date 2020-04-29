@@ -20,9 +20,6 @@ printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 listOfFiles = ['story' + i + '.txt']
 
-for i in range (1, 50):
-  listOfFiles.append('story' + i + '.txt')
-
 selectedFile = random.choice(listOfFiles)
 f = open(selectedFile, 'r')
 file_contents = f.read()
