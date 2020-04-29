@@ -16,7 +16,7 @@ import random
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 
-    printer.print("story1.txt")
+    printer.print('story1.txt')
 
 
 
