@@ -17,6 +17,7 @@
 from __future__ import print_function
 import RPi.GPIO as GPIO
 import subprocess, time, socket
+import random
 from PIL import Image
 from Adafruit_Thermal import *
 
