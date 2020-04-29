@@ -9,14 +9,16 @@ from urllib2 import urlopen
 import lxml as lh
 import os
 import random
-	
-	
+
+
 
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
-for x in result:
- x = printer.print(random.choice(list(open(test)))
-    printer.println("story[int]")
+
+x = open('story1.txt')
+r=x.read()
+    printer.print(x)
+    printer.println(' ')
 	
 
 
