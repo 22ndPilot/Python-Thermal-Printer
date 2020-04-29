@@ -17,8 +17,7 @@ printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 
     printer.print("story1.txt")
-    printer.println(' ')
-	
+
 
 
 printer.feed(3)
