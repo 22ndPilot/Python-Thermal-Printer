@@ -15,8 +15,10 @@ import random
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
-from pathlib import Path
-fileContent = Path('story1.txt').read_text()
-printer.print(fileContent)
+
+filepath = 'storytest1.txt'
+with open(filepath) as fp:
+  line= fp.readline()
+  printer.print(line)
 
 printer.feed(3)
