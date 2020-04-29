@@ -26,7 +26,7 @@ printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
         data = theFile.read()
         return data
 
-print getFileContent('./test.txt')
+printer.print getFileContent('./test.txt')
 
 
 printer.feed(3)
