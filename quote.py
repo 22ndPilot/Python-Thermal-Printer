@@ -15,8 +15,13 @@ import random
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
-
-    printer.print('story1.txt')
+def read_file():
+    print("Now reading the file..")
+    try:
+        f = open("story1.txt", "r")
+        for line in f.readlines():
+            print(line)
+        f.close()
 
 
 
