@@ -18,7 +18,7 @@ import uuid
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
-i = [1, 50]
+
 listOfFiles = ['story1.txt', 'story2.txt', 'story3.txt', 'story4.txt', 'story5.txt', 'story6.txt', 'story7.txt', 'story8.txt',
                'story8.txt', 'story9.txt', 'story10.txt']
 
