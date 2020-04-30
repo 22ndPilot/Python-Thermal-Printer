@@ -12,6 +12,8 @@ import random
 import json
 import glob
 import uuid
+import unicodedata
+
 
 
 
